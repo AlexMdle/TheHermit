@@ -1,0 +1,62 @@
+[
+  {
+    "PROPER_NAME": "Na Mira",
+    "NAMES": [
+      "Na Mira",
+	  "Dead_On",
+	  "dead_on",
+      "Na_Mira",
+      "na_mira",
+      "deadon"
+    ],
+    "DESCRIPTION": "Essa carta têm um efeito extra se jogada do meio da sua mão."
+  },
+  {
+    "PROPER_NAME": "Concentração",
+    "NAMES": [
+      "Concentrar",
+      "concentrar",
+      "concentrado",
+      "Concentrado"
+    ],
+    "DESCRIPTION": "A próxima carta com #yNa #yMira jogada enquanto #yConcentrado ativa seu efeito independentemente da posição. Removido no fim do turno."
+  },
+  {
+    "ID": "bruise",
+    "PROPER_NAME": "Hematoma",
+    "NAMES": [
+      "Hematoma",
+      "hematoma"
+    ],
+  "DESCRIPTION": "Alvos com Hematoma tomam mais dano de ataque. Removido no fim do turno."
+},
+  {
+    "ID": "rugged",
+    "PROPER_NAME": "Inflexível",
+    "NAMES": [
+      "inflexível",
+	  "Inflexível",
+    ],
+  "DESCRIPTION": "Reduz a próxima instância de dano de ataque recebido a #b2."
+},
+  {
+    "PROPER_NAME": "Recompensa",
+    "NAMES": [
+      "recompensa"
+    ],
+  "DESCRIPTION": "Inimigo normal: #b15 de ouro.       Inimigo Elite: #b40 de ouro.              Chefe: #b100 de ouro."
+},
+{
+  "PROPER_NAME": "Atordoar",
+  "NAMES": [
+    "atordoar",
+    "Atordoar",
+    "atordoado",
+    "Atordoado",
+    "atordoados",
+    "Atordoados"
+  ],
+  "DESCRIPTION": "Inimigos atordoados pulam seus turnos."
+}
+
+]

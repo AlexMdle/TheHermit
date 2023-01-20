@@ -1,0 +1,102 @@
+{
+  "hermit:Momento": {
+    "NAME": "Altes Medaillon",
+    "FLAVOR": "Ein verblasstes Bild ist drin.",
+    "DESCRIPTIONS": [
+      "Nimm zu Beginn jedes Kampfes ein #yAndenken auf deine Hand."
+    ]
+  },
+  "hermit:RyeStalk": {
+    "NAME": "Roggenhalm",
+    "FLAVOR": "Immer noch in tadellosem Zustand, obwohl es so lang gekaut worden ist.",
+    "DESCRIPTIONS": [
+      "Alle Feinde verlieren zu Beginn jedes Kampfes #b2 #yStärke."
+    ]
+  },
+  "hermit:BartenderGlass": {
+    "NAME": "Schnapsglas",
+    "FLAVOR": "Jede Flüssigkeit, die sich darin befindet, verwandelt sich in etwas anderes.",
+    "DESCRIPTIONS": [
+      "Die ersten #b2 male, dass du ein Trank im Kampf benutzst, erhalte ein zufälliges Trank. Du kannst nur #b2 Tränke in jedem Kampf benutzen.",
+      "Du kannst keine Tränke mehr in diesen Kampf benutzen."
+    ]
+  },
+  "hermit:Horseshoe": {
+    "NAME": "Hufeisen",
+    "FLAVOR": "Ein Glücksbringer. Jemand wird es sicherlich vermissen.",
+    "DESCRIPTIONS": [
+      "Immer wenn du #ySchwach, #yGebrechlich oder #yVerwundbar erhälst, erhalte #b1 weniger."
+    ]
+  },
+  "hermit:Spyglass": {
+    "NAME": "Fernrohr",
+    "FLAVOR": "Eigentum von Kestin Highfin.",
+    "DESCRIPTIONS": [
+      "Immer wenn du dein Zug #yhermit:konzentriert endest, erhalte [E] im nächsten Zug."
+    ]
+  },
+  "hermit:RedScarf": {
+    "NAME": "Roter Schal",
+    "FLAVOR": "Es ist kuschelig und warm.",
+    "DESCRIPTIONS": [
+      "Immer wenn du einen Debuff auf einen Gegner anwendest, erhalte #b2 #yBlock."
+    ]
+  },
+  "hermit:DentedPlate": {
+    "NAME": "Verbeulte Platte",
+    "FLAVOR": "Es stecken immer noch ein paar Kugeln darin.",
+    "DESCRIPTIONS": [
+      "Wenn deine TP unter oder genau #b50% sind, erhalte [E] und ziehe #b1 Karte in deinem Zug."
+    ]
+  },
+  "hermit:PetGhost": {
+    "NAME": "Haustiergeist",
+    "FLAVOR": "Armer Kerl.",
+    "DESCRIPTIONS": [
+      "Das erste mal, dass du in einem Kampf sterben würdest, überlebe statdessen mit #b1 TP."
+    ]
+  },
+  "hermit:CharredGlove": {
+    "NAME": "Verkohlter Handschuh",
+    "FLAVOR": "In Teilen des Handschus glüht immer noch unheimliche Asche.",
+    "DESCRIPTIONS": [
+      "Immer wenn du ein #rFluch ziehst, fügt dein nächster Angriff #b3 mehr Schaden zu."
+    ]
+  },
+  "hermit:ClaspedLocket": {
+    "NAME": "Zuklapptes Medaillon",
+    "FLAVOR": "Es öffnet nicht mehr.",
+    "DESCRIPTIONS": [
+      "Ersetzt #yAltes #yMedaillon. Wenn du das erste Mal in einem Zug ein #rFluch ziehst, erschöpfe es und ziehe #b2 Karten. Erhalte beim Aufheben #b2 #rWunden.",
+      "Nie wieder..."
+    ]
+  },
+  "hermit:StraightRazor": {
+    "NAME": "Rasiermesser",
+    "FLAVOR": "Für eine glättere Rasur...",
+    "DESCRIPTIONS": [
+      "Immer wenn du eine Karte aus deinem Deck entfernst, heile #b15 TP."
+    ]
+  },
+  "hermit:BrassTacks": {
+    "NAME": "Messingnägel",
+    "FLAVOR": "Der Glanz dieser Nägel scheint nie zu verblassen.",
+    "DESCRIPTIONS": [
+      "Beginne jeden Kampf mit #b2 #yMetallschicht."
+    ]
+  },
+  "hermit:BlackPowder": {
+    "NAME": "Schwarzpulver",
+    "FLAVOR": "Mit Vorsicht zu handhaben.",
+    "DESCRIPTIONS": [
+      "Füge am Ende deines Zuges ALLEN Feiden #b2 Schaden zu für jeden #yhermit:Volltreffer in diesem Zug."
+    ]
+  },
+  "hermit:BloodyTooth": {
+    "NAME": "Gebrochener Zahn",
+    "FLAVOR": "Scheint zu groß um von einem Menschen zu stammen...",
+    "DESCRIPTIONS": [
+      "Beginne jeden Kampf mit #b1 #yStärke für jeden gewonnenen Elite-Kampf im selben Akt."
+    ]
+  }
+}

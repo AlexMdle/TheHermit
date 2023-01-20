@@ -1,0 +1,61 @@
+[
+  {
+    "PROPER_NAME": "Volltreffer",
+    "NAMES": [
+      "Volltreffer",
+      "volltreffer"
+    ],
+    "DESCRIPTION": "Karten mit Volltreffer haben ein zusätzliches Effekt in der Mitte deiner Hand."
+  },
+  {
+    "PROPER_NAME": "Konzentration",
+    "NAMES": [
+      "Konzentration",
+      "konzentration",
+      "Konzentriere",
+      "konzentriere",
+	  "Konzentriert",
+      "konzentriert"
+    ],
+    "DESCRIPTION": "Wenn konzentriert, erzielt deine nächste #yVolltreffer Karte ihren Effekt unabhängig von Position. Läuft am ende des Zuges ab."
+  },
+  {
+    "ID": "bruise",
+    "PROPER_NAME": "Prügel",
+    "NAMES": [
+      "Prügel",
+      "prügel"
+    ],
+  "DESCRIPTION": "Ziele mit Prügel nehmen mehr Angriffschaden. Läuft am ende des Zuges ab."
+},
+  {
+    "ID": "rugged",
+    "PROPER_NAME": "Robust",
+    "NAMES": [
+      "Robust",
+	  "robust"
+    ],
+  "DESCRIPTION": "Reduziert den nächsten Angriffschadentreffer zu #b2."
+},
+  {
+    "PROPER_NAME": "Kopfgeld",
+    "NAMES": [
+      "Kopfgeld",
+      "kopfgeld"
+    ],
+  "DESCRIPTION": "Normaler Gegner: #b15 Gold.    Elite Gegner: #b40 Gold.             Boss: #b100 Gold."
+},
+{
+  "PROPER_NAME": "Betäubung",
+  "NAMES": [
+    "Betäubung",
+    "betäubung",
+    "Betäubt",
+    "betäubt",
+    "Betäube",
+    "betäube"
+  ],
+  "DESCRIPTION": "Betäubte Feinde überspringen ihren Zug."
+}
+
+]
