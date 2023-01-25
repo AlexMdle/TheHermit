@@ -40,6 +40,7 @@ public class Snipe extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = magicNumber = SnipeAmount;
         loadJokeCardImage(this, "snipe.png");
+        exhaust = true;
     }
 
     // Actions the card should do.

@@ -57,6 +57,18 @@ public class Spite extends AbstractDynamicCard {
         Wiz.atb(new DrawCardAction(drawcards));
     }
 
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractDynamicCard.BLUE_BORDER_GLOW_COLOR.cpy();
+
+        for(AbstractCard c : Wiz.p().hand.group)
+        {
+            if (c.color == CardColor.CURSE) {
+                this.glowColor = AbstractDynamicCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                return;
+            }
+        }
+    }
+
     //Upgraded stats.
     @Override
     public void upgrade() {

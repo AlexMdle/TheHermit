@@ -1,8 +1,8 @@
 package hermit.cards;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.UpgradeRandomCardAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hermit.HermitMod;
 import hermit.characters.hermit;
 import hermit.powers.SnipePower;
+import hermit.util.Wiz;
 
 import static hermit.HermitMod.loadJokeCardImage;
 import static hermit.HermitMod.makeCardPath;
@@ -38,14 +39,14 @@ public class Vantage extends AbstractDynamicCard {
 
     private static final int COST = 1;
     private static final int BLOCK = 8;
-    private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int UPGRADE_PLUS_BLOCK = 1;
 
     // /STAT DECLARATION/
 
     public Vantage() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        baseMagicNumber=magicNumber=2;
+        baseMagicNumber=magicNumber=1;
         this.tags.add(Enums.DEADON);
         loadJokeCardImage(this, "vantage.png");
     }
@@ -61,10 +62,15 @@ public class Vantage extends AbstractDynamicCard {
             int DeadOnTimes = DeadOnAmount();
 
             for (int a = 0; a < DeadOnTimes; a++) {
-                for (int i = 0; i < magicNumber; i++)
-                    this.addToBot(new UpgradeRandomCardAction());
+                    Wiz.atb(new DrawCardAction(magicNumber, new AbstractGameAction() {
+                        @Override
+                        public void update() {
+                            for (AbstractCard c: DrawCardAction.drawnCards)
+                                Wiz.att(new UpgradeSpecificCardAction(c));
+                            isDone = true;
+                        }
+                    }));
             }
-
             this.addToTop(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, SnipePower.POWER_ID, 1));
         }
     }
@@ -81,6 +87,7 @@ public class Vantage extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(1);
             initializeDescription();

@@ -43,8 +43,8 @@
   },
   "hermit:Snipe": {
     "NAME": "Snipe",
-    "DESCRIPTION": "Your next hermit:Dead_On effect this turn triggers twice.",
-    "UPGRADE_DESCRIPTION": "hermit:Concentrate. NL Your next hermit:Dead_On effect this turn triggers twice."
+    "DESCRIPTION": "Your next hermit:Dead_On effect this turn triggers twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "hermit:Concentrate. NL Your next hermit:Dead_On effect this turn triggers twice. NL Exhaust."
   },
   "hermit:CalledShot": {
     "NAME": "Called Shot",
@@ -181,7 +181,8 @@
   },
   "hermit:Vantage": {
     "NAME": "Vantage",
-    "DESCRIPTION": "Gain !B! Block. NL hermit:Dead_On: Upgrade !M! random cards in your hand for the rest of combat."
+    "DESCRIPTION": "Gain !B! Block. NL hermit:Dead_On: Draw a card and upgrade it for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL hermit:Dead_On: Draw !M! cards and upgrade them for the rest of combat."
   },
   "hermit:Brawl": {
     "NAME": "Brawl",
