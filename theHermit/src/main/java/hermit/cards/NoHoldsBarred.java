@@ -50,8 +50,8 @@ public class NoHoldsBarred extends AbstractDynamicCard {
     public NoHoldsBarred() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         isMultiDamage=true;
-        baseDamage=18;
-        magicNumber = baseMagicNumber = 4;
+        baseDamage=19;
+        magicNumber = baseMagicNumber = 5;
         loadJokeCardImage(this, "no_holds_barred.png");
     }
 

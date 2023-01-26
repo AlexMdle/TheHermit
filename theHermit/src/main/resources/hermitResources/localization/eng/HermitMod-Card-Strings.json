@@ -133,7 +133,7 @@
   },
   "hermit:Scavenge": {
     "NAME": "Scavenge",
-    "DESCRIPTION": "Gain !M! *Plated *Armor. NL hermit:Dead_On: NL Gain !hermit:SecondMagic! Gold. NL Exhaust."
+    "DESCRIPTION": "Gain !M! *Plated *Armor. NL hermit:Dead_On: Gain !hermit:SecondMagic! Gold. NL Exhaust."
   },
   "hermit:ImpendingDoom": {
     "NAME": "Impending Doom",
