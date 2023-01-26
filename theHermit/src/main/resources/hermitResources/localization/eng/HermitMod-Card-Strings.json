@@ -137,7 +137,7 @@
   },
   "hermit:ImpendingDoom": {
     "NAME": "Impending Doom",
-    "DESCRIPTION": "Unplayable. NL At the end of your turn,if hermit:Dead_On: NL Deal 13 damage to EVERYONE."
+    "DESCRIPTION": "Unplayable. NL At the end of your turn, if hermit:Dead_On: NL Deal 13 damage to EVERYONE."
   },
   "hermit:MementoCard": {
     "NAME": "Memento",
