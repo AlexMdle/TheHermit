@@ -1,7 +1,12 @@
 package hermit.cards;
 
+import basemod.BaseMod;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.UpgradeSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,6 +15,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import hermit.HermitMod;
 import hermit.characters.hermit;
+import hermit.util.Wiz;
+
+import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 import static hermit.HermitMod.loadJokeCardImage;
 import static hermit.HermitMod.makeCardPath;
@@ -29,7 +38,6 @@ public class TakeCover extends AbstractDynamicCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -43,81 +51,87 @@ public class TakeCover extends AbstractDynamicCard {
 
     public TakeCover() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust=true;
-        this.cardsToPreview = new Defend_Hermit();
+        exhaust=true;
+        cardsToPreview = new Defend_Hermit();
         loadJokeCardImage(this, "take_cover.png");
     }
 
     @Override
     public void applyPowers() {
-        if (this.energyOnUse < EnergyPanel.totalCount) {
-            this.energyOnUse = EnergyPanel.totalCount;
-        }
+        int num = EnergyPanel.totalCount;
 
-        this.cardsToPreview.baseBlock = 5;
-
-        int num = this.energyOnUse;
+        cardsToPreview.baseBlock = 5;
 
         if (AbstractDungeon.player.hasRelic("Chemical X")) {
             num += 2;
         }
 
-        if (this.upgraded)
+        if (upgraded)
             num++;
 
         for(int a=0;a<num;a++)
         {
-            this.cardsToPreview.baseBlock += 3;
-            this.cardsToPreview.upgradedBlock = true;
-            this.cardsToPreview.upgraded = true;
+            cardsToPreview.baseBlock += 3;
+            cardsToPreview.upgradedBlock = true;
+            cardsToPreview.upgraded = true;
 
             if (num > 1)
-                this.cardsToPreview.name = defendStrings.NAME + "+" + num;
+                cardsToPreview.name = defendStrings.NAME + "+" + num;
             else
-                this.cardsToPreview.name = defendStrings.NAME + "+";
+                cardsToPreview.name = defendStrings.NAME + "+";
         }
+
+        cardsToPreview.initializeDescription();
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (this.energyOnUse < EnergyPanel.totalCount) {
-            this.energyOnUse = EnergyPanel.totalCount;
-        }
+        int bazinga = energyOnUse;
 
-        int num = energyOnUse;
+        Wiz.atb(new AbstractGameAction() {
+            @Override
+            public void update() {
+                int num = EnergyPanel.totalCount;
+                if (bazinga != -1) {
+                    num = bazinga;
+                }
 
-        if (p.hasRelic("Chemical X")) {
-            num += 2;
-            p.getRelic("Chemical X").flash();
-        }
+                if (p.hasRelic("Chemical X")) {
+                    num += 2;
+                    p.getRelic("Chemical X").flash();
+                }
 
-        AbstractCard s = (new Defend_Hermit()).makeCopy();
+                AbstractCard s = (new Defend_Hermit()).makeCopy();
 
-        if (this.upgraded)
-            num++;
+                if (upgraded)
+                    num++;
 
-        for(int a=0;a<num;a++)
-        {
-            s.baseBlock += 3;
-            s.upgradedBlock = true;
-            s.upgraded = true;
+                for(int a=0;a<num;a++)
+                {
+                    s.baseBlock += 3;
+                    s.upgradedBlock = true;
+                    s.upgraded = true;
 
-            if (num > 1)
-                s.name = defendStrings.NAME + "+" + num;
-            else
-                s.name = defendStrings.NAME + "+";
-        }
+                    if (num > 1)
+                        s.name = defendStrings.NAME + "+" + num;
+                    else
+                        s.name = defendStrings.NAME + "+";
+                }
 
 
-        s.cost = 0;
-        s.costForTurn = 0;
-        s.isCostModified = true;
-        this.addToTop(new MakeTempCardInHandAction(s, 1));
+                s.cost = 0;
+                s.costForTurn = 0;
+                s.isCostModified = true;
+                this.addToTop(new MakeTempCardInHandAction(s, 1));
 
-        if (!this.freeToPlayOnce) {
-            p.energy.use(EnergyPanel.totalCount);
-        }
+                if (!freeToPlayOnce) {
+                    p.energy.use(EnergyPanel.totalCount);
+                }
+
+                isDone = true;
+            }
+        });
     }
 
     //Upgraded stats.
@@ -125,7 +139,7 @@ public class TakeCover extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.cardsToPreview.upgrade();
+            cardsToPreview.upgrade();
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

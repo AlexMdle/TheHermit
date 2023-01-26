@@ -27,11 +27,10 @@ public class DeadOrAliveAction extends AbstractGameAction {
     public void update() {
         if (this.duration == 0.1F && this.target != null && !(this.target.isDying || this.target.currentHealth <= 0) && !this.target.halfDead)
         {
-            if (this.energyOnUse < EnergyPanel.totalCount) {
-                this.energyOnUse = EnergyPanel.totalCount;
+            int num = EnergyPanel.totalCount;
+            if (this.energyOnUse != -1) {
+                num = this.energyOnUse;
             }
-
-            int num = energyOnUse;
 
             if (p.hasRelic("Chemical X")) {
                 num += 2;

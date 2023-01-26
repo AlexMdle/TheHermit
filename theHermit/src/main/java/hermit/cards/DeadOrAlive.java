@@ -27,7 +27,6 @@ public class DeadOrAlive extends AbstractDynamicCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-
     // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -35,10 +34,7 @@ public class DeadOrAlive extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = hermit.Enums.COLOR_YELLOW;
 
-
-
     private static final int COST = -1;
-
 
     // /STAT DECLARATION/
 
@@ -48,13 +44,12 @@ public class DeadOrAlive extends AbstractDynamicCard {
         this.exhaust=true;
         this.tags.add(CardTags.HEALING);
         loadJokeCardImage(this, "dead_or_alive.png");
-
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DeadOrAliveAction(p,m,new DamageInfo(p, this.damage, this.damageTypeForTurn),this.freeToPlayOnce,this.energyOnUse));
+        this.addToBot(new DeadOrAliveAction(p,m,new DamageInfo(p, damage, damageTypeForTurn),freeToPlayOnce,energyOnUse));
     }
 
     //Upgraded stats.
