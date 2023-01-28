@@ -47,9 +47,9 @@ public class ClaspedLocket extends CustomRelic {
         if (!this.canTrigger)
                 return;
 
-        if (card.type == AbstractCard.CardType.CURSE && !AbstractDungeon.player.hasPower("No Draw")) {
-            this.canTrigger = false;
+        if (card.type == AbstractCard.CardType.CURSE) {
             this.flash();
+            this.canTrigger = false;
             this.addToTop(new DrawCardAction(AbstractDungeon.player, 2));
             this.addToTop(new ExhaustSpecificCardAction(card,AbstractDungeon.player.hand));
         }
