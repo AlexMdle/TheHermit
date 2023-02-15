@@ -46,7 +46,7 @@ public abstract class AbstractHermitCard extends CustomCard {
     public boolean upgradedDefaultSecondMagicNumber;
     public boolean isDefaultSecondMagicNumberModified;
     public static boolean lastCardDeadOn = false;
-    public static ArrayList deadOnThisTurn = new ArrayList();
+    public static ArrayList<Boolean> deadOnThisTurn = new ArrayList();
 
     public AbstractHermitCard(final String id,
                               final String name,

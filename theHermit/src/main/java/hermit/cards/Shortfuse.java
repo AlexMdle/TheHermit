@@ -37,6 +37,7 @@ public class Shortfuse extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_DMG = 4;
 
     private int cost_revert = 0;
+    public static int basics_played = 0;
 
     // /STAT DECLARATION/
 
@@ -44,6 +45,13 @@ public class Shortfuse extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         loadJokeCardImage(this, "short_fuse.png");
+
+        for(int a=0;a<basics_played;a++) {
+            if (this.cost > 0) {
+                this.updateCost(-1);
+                this.cost_revert++;
+            }
+        }
     }
 
     // Actions the card should do.
@@ -79,15 +87,4 @@ public class Shortfuse extends AbstractDynamicCard {
             upgradeDamage(UPGRADE_PLUS_DMG);
         }
     }
-
-    @Override
-    public AbstractCard makeCopy() {
-        AbstractCard tmp = new Shortfuse();
-        if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            this.setCostForTurn(this.cost - GameActionManager.totalDiscardedThisTurn);
-        }
-
-        return tmp;
-    }
-
 }
