@@ -46,6 +46,7 @@ public class Shortfuse extends AbstractDynamicCard {
         baseDamage = DAMAGE;
         loadJokeCardImage(this, "short_fuse.png");
 
+        if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)
         for(int a=0;a<basics_played;a++) {
             if (this.cost > 0) {
                 this.updateCost(-1);
