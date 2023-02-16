@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.blue.ForceField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +14,8 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import hermit.HermitMod;
 import hermit.characters.hermit;
+
+import java.util.Iterator;
 
 import static hermit.HermitMod.loadJokeCardImage;
 import static hermit.HermitMod.makeCardPath;
@@ -36,8 +39,7 @@ public class Shortfuse extends AbstractDynamicCard {
     private static final int DAMAGE = 18;
     private static final int UPGRADE_PLUS_DMG = 4;
 
-    private int cost_revert = 0;
-    public static int basics_played = 0;
+    public int cost_revert = 0;
 
     // /STAT DECLARATION/
 
@@ -46,12 +48,8 @@ public class Shortfuse extends AbstractDynamicCard {
         baseDamage = DAMAGE;
         loadJokeCardImage(this, "short_fuse.png");
 
-        if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)
-        for(int a=0;a<basics_played;a++) {
-            if (this.cost > 0) {
-                this.updateCost(-1);
-                this.cost_revert++;
-            }
+        if (CardCrawlGame.dungeon != null && AbstractDungeon.currMapNode != null) {
+            this.configureCostsOnNewCard();
         }
     }
 
@@ -61,6 +59,20 @@ public class Shortfuse extends AbstractDynamicCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new ExplosionSmallEffect(m.hb.cX, m.hb.cY), 0.1F));
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn)));
+    }
+
+    public void configureCostsOnNewCard() {
+        Iterator var1 = AbstractDungeon.actionManager.cardsPlayedThisTurn.iterator();
+
+        while(var1.hasNext()) {
+            AbstractCard c = (AbstractCard)var1.next();
+            if (c.hasTag(CardTags.STARTER_STRIKE) || c.hasTag(CardTags.STARTER_DEFEND)) {
+                if (this.cost > 0) {
+                    this.updateCost(-1);
+                    this.cost_revert++;
+                }
+            }
+        }
     }
 
     @Override

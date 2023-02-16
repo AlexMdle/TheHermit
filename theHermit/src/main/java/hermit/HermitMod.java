@@ -563,23 +563,15 @@ public class HermitMod implements
             if (HermitMod.activeTutorials[0]){ AbstractDungeon.actionManager.addToBottom(new MessageCaller(0)); }
         }
         AbstractHermitCard.deadOnThisTurn.clear();
-        Shortfuse.basics_played = 0;
     }
 
     public void receiveOnPlayerTurnStart() {
         AbstractHermitCard.deadOnThisTurn.clear();
-
-        Shortfuse.basics_played = 0;
     }
 
     public void receiveCardUsed(AbstractCard card)
     {
         AbstractHermitCard.deadOnThisTurn.add(false);
-
-        if (card.hasTag(AbstractCard.CardTags.STARTER_STRIKE) || card.hasTag(AbstractCard.CardTags.STARTER_DEFEND))
-        {
-            Shortfuse.basics_played++;
-        }
     }
 
     public static void saveData() throws IOException {
