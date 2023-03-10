@@ -1,6 +1,7 @@
 package hermit;
 
 import basemod.*;
+import basemod.abstracts.CustomSavable;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import basemod.interfaces.OnStartBattleSubscriber;
@@ -35,6 +36,7 @@ import hermit.potions.Tonic;
 import hermit.util.IDCheckDontTouchPls;
 import hermit.util.KeywordWithProper;
 import hermit.util.TextureLoader;
+import hermit.util.Wiz;
 import hermit.variables.DefaultCustomVariable;
 import hermit.variables.DefaultSecondMagicNumber;
 import com.evacipated.cardcrawl.mod.widepotions.WidePotionsMod;
@@ -43,6 +45,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import static basemod.BaseMod.gson;
@@ -370,6 +373,8 @@ public class HermitMod implements
 
         // WIDE pots
 
+        initializeSavedData();
+
         if (Loader.isModLoaded("widepotions")) {
             WidePotionsMod.whitelistSimplePotion(Tonic.POTION_ID);
             WidePotionsMod.whitelistSimplePotion(BlackBile.POTION_ID);
@@ -579,6 +584,24 @@ public class HermitMod implements
         int i;
         for (i = 0; i < activeTutorials.length; i++) { config.setBool("activeTutorials" + i, activeTutorials[i]); }
         config.save();
+    }
+
+    private void initializeSavedData() {
+        BaseMod.addSaveField("HermitCursedWeaponDamage", new CustomSavable<Integer>() {
+            @Override
+            public Integer onSave() {
+                return CursedWeapon.BONUS;
+            }
+
+            @Override
+            public void onLoad(Integer s) {
+                CursedWeapon.BONUS = s;
+
+                for(AbstractCard c : Wiz.p().masterDeck.group)
+                    if (c instanceof CursedWeapon)
+                        c.baseDamage += CursedWeapon.BONUS;
+            }
+        });
     }
 
     public static void loadJokeCardImage(AbstractCard card, String img) {

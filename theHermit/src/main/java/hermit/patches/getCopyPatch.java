@@ -11,10 +11,12 @@ public class getCopyPatch {
     public static class CursedWeaponOnInit {
 
         public static AbstractCard Postfix(AbstractCard __result) {
+            /*
             if (__result.cardID.equals(CursedWeapon.ID)) {
                 __result.baseDamage = __result.misc;
                 __result.initializeDescription();
             }
+            */
 
             return __result;
         }

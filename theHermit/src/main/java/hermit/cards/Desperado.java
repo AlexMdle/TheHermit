@@ -11,6 +11,7 @@ import hermit.HermitMod;
 import hermit.actions.ReduceCostActionFixed;
 import hermit.characters.hermit;
 import hermit.patches.EnumPatch;
+import hermit.util.Wiz;
 
 import static hermit.HermitMod.loadJokeCardImage;
 import static hermit.HermitMod.makeCardPath;
@@ -52,9 +53,9 @@ public class Desperado extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ModifyDamageAction(this.uuid, this.baseDamage));
-        this.addToBot(new ReduceCostActionFixed(this.uuid, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), EnumPatch.HERMIT_GUN2));
+        Wiz.atb(new ModifyDamageAction(this.uuid, this.baseDamage));
+        Wiz.atb(new ReduceCostActionFixed(this.uuid, this.magicNumber));
+        Wiz.atb(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), EnumPatch.HERMIT_GUN2));
     }
 
     // Upgraded stats.
