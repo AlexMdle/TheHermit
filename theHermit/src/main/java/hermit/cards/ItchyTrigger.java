@@ -15,6 +15,7 @@ import hermit.HermitMod;
 import hermit.characters.hermit;
 import hermit.patches.EnumPatch;
 import hermit.powers.SnipePower;
+import hermit.util.Wiz;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -88,7 +89,7 @@ public class ItchyTrigger extends AbstractDynamicCard {
 
             while(var4.hasNext()) {
                 AbstractCard c = (AbstractCard)var4.next();
-                if (c.costForTurn > 0 && !c.freeToPlayOnce) {
+                if (c.cost >= 0 && Wiz.getLogicalCardCost(c) > 0) {
                     groupCopy.add(c);
                 }
             }

@@ -46,7 +46,7 @@
   },
   "hermit:CursedWeapon": {
     "NAME": "Проклятое оружие",
-    "DESCRIPTION": "Отнимает !M! ОЗ. NL Наносит !D! урона. NL Повышает свой урон на 3. NL Сжигается."
+    "DESCRIPTION": "Отнимает !M! ОЗ. NL Наносит !D! урона. NL *Проклятые *Оружия на всегда наносят !hermit:SecondMagic! больше урона. NL Сжигается."
   },
   "hermit:DeadMansHand": {
     "NAME": "Рука мертвеца",
