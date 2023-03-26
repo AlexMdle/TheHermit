@@ -43,14 +43,13 @@
   },
   "hermit:Snipe": {
     "NAME": "Scharfschützen",
-    "DESCRIPTION": "Dein nächstes hermit:Volltreffer in diesem Zug wird zweimal ausgeführt.",
-    "UPGRADE_DESCRIPTION": "hermit:Konzentriere dich. NL Dein nächstes hermit:Volltreffer in diesem Zug wird zweimal ausgeführt."
+    "DESCRIPTION": "Dein nächstes hermit:Volltreffer in diesem Zug wird zweimal ausgeführt. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "hermit:Konzentriere dich. NL Dein nächstes hermit:Volltreffer in diesem Zug wird zweimal ausgeführt. NL Erschöpft."
   },
   "hermit:CalledShot": {
     "NAME": "Fangschuss",
-    "DESCRIPTION": "Füge Schaden gleich der Anzahl von Karten in der Hand zu. NL hermit:Volltreffer: NL Ziehe !M! Angriff.",
-    "UPGRADE_DESCRIPTION": " NL (Fügt !D! Schaden zu.)",
-    "EXTENDED_DESCRIPTION": ["Füge Schaden gleich der Anzahl von Karten in der Hand zu. NL hermit:Volltreffer: NL Ziehe !M! Angriffe."]
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Wenn deine letzte Karte dieses Zug ein hermit:Volltreffer erzielte, ziehe 1 Karte.",
+    "UPGRADE_DESCRIPTION": "Behalten. NL Füge !D! Schaden zu. NL Wenn deine letzte Karte dieses Zug ein hermit:Volltreffer erzielte, ziehe 1 Karte."
   },
   "hermit:Dissolve": {
     "NAME": "Auflösen",
@@ -96,7 +95,7 @@
   },
   "hermit:Adapt": {
     "NAME": "Anpassung",
-    "DESCRIPTION": "Zu Beginn deines Zuges kannst du 1 Karte erschöpfen um !B! Block zu erhalten."
+    "DESCRIPTION": "Zu Beginn deines Zuges kannst du eine Karte erschöpfen um 8 Block zu erhalten."
   },
   "hermit:Dive": {
     "NAME": "Tauchen",
@@ -108,12 +107,11 @@
   },
   "hermit:Roulette": {
     "NAME": "Roulette",
-    "DESCRIPTION": "Füge einem zufälligen Gegner !D! Schaden zu. NL Wirf deine Hand ab und ziehe genauso viele Karten."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Wirf deine Hand ab und ziehe genauso viele Karten."
   },
   "hermit:Midnight": {
     "NAME": "Mitternacht",
-    "DESCRIPTION": "Flüchtig. NL Erhalte !B! Block. NL Nimm ein *Drohendes *Verhängnis auf die Hand.",
-    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Nimm ein *Drohendes *Verhängnis auf die Hand."
+    "DESCRIPTION": "Erhalte !B! Block. NL Nimm ein *Drohendes *Verhängnis auf die Hand."
   },
   "hermit:Glare": {
     "NAME": "Starr",
@@ -127,7 +125,7 @@
   },
   "hermit:Misfire": {
     "NAME": "Fehlzündung",
-    "DESCRIPTION": "Füge einem zufälligen Gegner !D! Schaden zu. NL Mische ein *Ungeschickt in den Nachziehstapel."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Mische ein *Ungeschickt in den Nachziehstapel."
   },
   "hermit:SprayPray": {
     "NAME": "Schusssalve",
@@ -155,7 +153,7 @@
   },
   "hermit:Spite": {
     "NAME": "Hass",
-    "DESCRIPTION": "Füge 2 mal !D! Schaden zu. NL Ziehe !M! *Flüche."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe für jeden *Flüch in deiner Hand eine Karte."
   },
   "hermit:Manifest": {
     "NAME": "Manifestation",
@@ -183,7 +181,8 @@
   },
   "hermit:Vantage": {
     "NAME": "Aussichtspunkt",
-    "DESCRIPTION": "Erhalte !B! Block. NL hermit:Volltreffer: NL Verbessere !M! zufällige Karten in deiner Hand bis zum ende des Kampfes."
+    "DESCRIPTION": "Erhalte !B! Block. NL hermit:Volltreffer: NL Ziehe eine Karte und verbessere sie bis zum Ende des Kampfes.",
+    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL hermit:Volltreffer: NL Ziehe !M! Karten und verbessere sie bis zum Ende des Kampfes."
   },
   "hermit:Brawl": {
     "NAME": "Schlägerei",
@@ -200,7 +199,7 @@
   },
   "hermit:OverwhelmingPower": {
     "NAME": "Überwältigende Macht",
-    "DESCRIPTION": "Erhalte [E] [E] [E]. NL Ziehe 3 Karten. NL Immer wenn du dein Zug mit 0 Energie beendest, verliere !M! TP."
+    "DESCRIPTION": "Erhalte [E] [E] [E]. NL Ziehe !hermit:SecondMagic! Karten. NL Immer wenn du dein Zug mit 0 Energie beendest, verliere !M! TP."
   },
   "hermit:Maintenance": {
     "NAME": "Wartung",
@@ -213,8 +212,8 @@
   },
   "hermit:FullyLoaded": {
     "NAME": "Vollgeladen",
-    "DESCRIPTION": "Ziehe ALLE deine *Schläge and *Verteidigunen. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Behalten. NL Ziehe ALLE deine *Schläge and *Verteidigunen. NL Erschöpft."
+    "DESCRIPTION": "Nimm ALLE *Schläge and *Verteidigunen aus deinem Nachziehstapel auf die Hand. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Behalten. NL Nimm ALLE *Schläge and *Verteidigunen aus deinem Nachziehstapel auf die Hand. NL Erschöpft."
   },
   "hermit:Gestalt": {
     "NAME": "Gestalt",
@@ -226,7 +225,7 @@
   },
   "hermit:CursedWeapon": {
     "NAME": "Verfluchte Waffe",
-    "DESCRIPTION": "Verliere !M! TP. NL Füge !D! Schaden zu. NL Erhöhe den Schaden dieser Karte permanent um 3. NL Erschöpft."
+    "DESCRIPTION": "Verliere !M! TP. NL Füge !D! Schaden zu. NL *Verfluchte *Waffen fügen permanent !hermit:SecondMagic! mehr Schaden zu. NL Erschöpft."
   },
   "hermit:Enervate": {
     "NAME": "Entziehen",
@@ -309,7 +308,7 @@
   },
   "hermit:FinalCanter": {
     "NAME": "Letzter Kanter",
-    "DESCRIPTION": "Behalten. NL Füge für jedes Fluch in der Hand !D! Schaden zu. NL Erschöpft.",
+    "DESCRIPTION": "Behalten. NL Erschöpfe alle *Flüche in deiner Hand. Füge für jede !D! Schaden zu. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": " NL (Du hast !M! Fluch(e).)"
   },
   "hermit:HeroicBravado": {

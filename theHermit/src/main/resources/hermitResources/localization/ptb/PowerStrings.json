@@ -13,7 +13,7 @@
 },
 "hermit:ShadowCloakPower": {
         "NAME": "Capa Sombria",
-        "DESCRIPTIONS": ["Quando você comprar uma maldição, ganhe #b", " de Proteção."]
+        "DESCRIPTIONS": ["Quando você comprar ou #yExaurir uma Maldição, ganhe #b", " de Proteção."]
 },
 "hermit:TakeAimPower": {
         "NAME": "Tomar Mira",

@@ -16,6 +16,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -88,6 +89,7 @@ public class HermitMod implements
         EditCharactersSubscriber,
         PostInitializeSubscriber,
         AddAudioSubscriber,
+        StartGameSubscriber,
         OnCardUseSubscriber,
         OnStartBattleSubscriber,
         OnPlayerTurnStartSubscriber{
@@ -513,7 +515,7 @@ public class HermitMod implements
             return;
         }
 
-        for (KeywordWithProper keyword : gson.fromJson(GetLocString(langKey, "Keyword-Strings"), KeywordWithProper[].class))
+        for (KeywordWithProper keyword : gson.fromJson(GetLocString(langKey, "KeywordStrings"), KeywordWithProper[].class))
         {
             BaseMod.addKeyword(modID, keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
 
@@ -547,18 +549,18 @@ public class HermitMod implements
             return;
         }
 
-        loadCustomStrings(CardStrings.class, GetLocString(langKey, "Card-Strings"));
-        loadCustomStrings(RelicStrings.class, GetLocString(langKey, "Relic-Strings"));
-        loadCustomStrings(PowerStrings.class, GetLocString(langKey, "Power-Strings"));
-        loadCustomStrings(CharacterStrings.class, GetLocString(langKey, "Character-Strings"));
-        loadCustomStrings(UIStrings.class, GetLocString(langKey, "UI-Strings"));
-        loadCustomStrings(PotionStrings.class, GetLocString(langKey, "Potion-Strings"));
-        loadCustomStrings(TutorialStrings.class, GetLocString(langKey, "Tutorial-Strings"));
+        loadCustomStrings(CardStrings.class, GetLocString(langKey, "CardStrings"));
+        loadCustomStrings(RelicStrings.class, GetLocString(langKey, "RelicStrings"));
+        loadCustomStrings(PowerStrings.class, GetLocString(langKey, "PowerStrings"));
+        loadCustomStrings(CharacterStrings.class, GetLocString(langKey, "CharacterStrings"));
+        loadCustomStrings(UIStrings.class, GetLocString(langKey, "UIStrings"));
+        loadCustomStrings(PotionStrings.class, GetLocString(langKey, "PotionStrings"));
+        loadCustomStrings(TutorialStrings.class, GetLocString(langKey, "TutorialStrings"));
     }
 
 
     private static String GetLocString(String locCode, String name) {
-        return Gdx.files.internal(getModID() + "Resources/localization/" + locCode + "/HermitMod-" + name + ".json").readString(
+        return Gdx.files.internal(getModID() + "Resources/localization/" + locCode + "/" + name + ".json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
     }
 
@@ -586,6 +588,12 @@ public class HermitMod implements
         config.save();
     }
 
+    public void receiveStartGame() {
+        if (!CardCrawlGame.loadingSave) {
+            CursedWeapon.BONUS = 0;
+        }
+    }
+
     private void initializeSavedData() {
         BaseMod.addSaveField("HermitCursedWeaponDamage", new CustomSavable<Integer>() {
             @Override
@@ -595,11 +603,13 @@ public class HermitMod implements
 
             @Override
             public void onLoad(Integer s) {
-                CursedWeapon.BONUS = s;
+                if (s != null) {
+                    CursedWeapon.BONUS = s;
 
-                for(AbstractCard c : Wiz.p().masterDeck.group)
-                    if (c instanceof CursedWeapon)
-                        c.baseDamage += CursedWeapon.BONUS;
+                    for (AbstractCard c : Wiz.p().masterDeck.group)
+                        if (c instanceof CursedWeapon)
+                            c.baseDamage += CursedWeapon.BONUS;
+                }
             }
         });
     }

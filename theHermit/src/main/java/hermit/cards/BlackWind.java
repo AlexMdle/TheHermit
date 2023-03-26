@@ -64,7 +64,6 @@ public class BlackWind extends AbstractDynamicCard {
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.UPGRADE_DESCRIPTION;
         this.initializeDescription();
-
     }
 
     //Upgraded stats.

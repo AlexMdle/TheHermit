@@ -13,7 +13,7 @@
 },
 "hermit:ShadowCloakPower": {
         "NAME": "Schattenmantel",
-        "DESCRIPTIONS": ["Immer wenn du ein Fluch ziehst, erhalte #b", " Block."]
+        "DESCRIPTIONS": ["Immer wenn du ein Fluch ziehst oder erschöpfst, erhalte #b", " Block."]
 },
 "hermit:TakeAimPower": {
         "NAME": "Ins Visier",
@@ -21,7 +21,7 @@
 },
 "hermit:AdaptPower": {
         "NAME": "Anpassen",
-        "DESCRIPTIONS": ["Zu Beginn deines Zuges kannst du bis zu #b", " Karte erschöpfen. Erhalte #b5 Block dafür." , " Karten erschöpfen. Erhalte #b6 Block für jede."]
+        "DESCRIPTIONS": ["Zu Beginn deines Zuges kannst du bis zu #b", " Karte erschöpfen. Erhalte #b8 Block dafür." , " Karten erschöpfen. Erhalte #b6 Block für jede."]
 },
 "hermit:Bruise": {
         "NAME": "Prügel",
