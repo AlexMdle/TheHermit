@@ -34,8 +34,8 @@ public class CursedWeapon extends AbstractDynamicCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     public static int BONUS = 0;
-    private static final int COST = 0;
-    private static final int DAMAGE = 6;
+    private static final int COST = 1;
+    private static final int DAMAGE = 10;
 
     // /STAT DECLARATION/
 
@@ -97,7 +97,7 @@ public class CursedWeapon extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDefaultSecondMagicNumber(1);
+            upgradeBaseCost(0);
         }
     }
 }
