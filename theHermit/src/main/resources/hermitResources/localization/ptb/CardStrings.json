@@ -34,8 +34,8 @@
   },
   "hermit:HighCaliber": {
     "NAME": "Alto-Calibre",
-    "DESCRIPTION": "Cause !D! de dano. NL Adicione um *Golpe à sua mão. NL Exaurir.",
-    "UPGRADE_DESCRIPTION": "Cause !D! de dano. NL Adicione um *Golpe+ à sua mão. NL Exaurir."
+    "DESCRIPTION": "Cause !D! de dano. NL Adicione um *Golpe+2　 à sua mão. NL Exaurir.",
+    "UPGRADE_DESCRIPTION": "Cause !D! de dano. NL Adicione um *Golpe+3　 à sua mão. NL Exaurir."
   },
   "hermit:BodyArmor": {
     "NAME": "Body Armor",
