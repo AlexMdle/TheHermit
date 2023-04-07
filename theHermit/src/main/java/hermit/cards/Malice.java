@@ -60,19 +60,17 @@ public class Malice extends AbstractHermitCard {
 
             for (AbstractCard c : list)
             {
-                Wiz.p().hand.addToTop(c);
-                Wiz.att(new ExhaustSpecificCardAction(c,Wiz.p().hand,true));
+                Wiz.p().hand.moveToExhaustPile(c);
                 if (c.color == CardColor.CURSE)
                     isCurse = true;
             }
-            list.clear();
 
             if (isCurse)
                 Wiz.att(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.baseDamage), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
             else
                 Wiz.att(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
 
-        }, uiStrings.TEXT[0],false,false,false,true));
+        }, uiStrings.TEXT[0],false,false,false));
     }
 
     // Upgraded stats.

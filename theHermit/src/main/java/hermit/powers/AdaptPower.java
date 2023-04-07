@@ -54,11 +54,9 @@ public class AdaptPower extends AbstractPower implements CloneablePowerInterface
                 for (AbstractCard c : list)
                 {
                     Wiz.p().hand.moveToExhaustPile(c);
-                    AbstractDungeon.actionManager.addToTop(new GainBlockAction(this.owner, this.owner, 8));
+                    Wiz.att(new GainBlockAction(this.owner, this.owner, 8));
                 }
-                AbstractDungeon.player.hand.refreshHandLayout();
-                list.clear();
-            }, null, uiStrings.TEXT[0],false,true,true,false));
+            }, null, uiStrings.TEXT[0],false,true,true));
     }
 
     @Override
