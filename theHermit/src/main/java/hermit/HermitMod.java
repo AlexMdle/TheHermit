@@ -426,11 +426,11 @@ public class HermitMod implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
 
         BaseMod.addRelicToCustomPool(new Memento(), hermit.Enums.COLOR_YELLOW);
-        BaseMod.addRelicToCustomPool(new RyeStalk(), hermit.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool(new Horseshoe(), hermit.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool(new BartenderGlass(), hermit.Enums.COLOR_YELLOW);
         BaseMod.addRelic(new BrassTacks(), RelicType.SHARED);
         BaseMod.addRelic(new BloodyTooth(), RelicType.SHARED);
-        BaseMod.addRelic(new Horseshoe(), RelicType.SHARED);
+        BaseMod.addRelic(new RyeStalk(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool(new Spyglass(), hermit.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool(new StraightRazor(), hermit.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool(new CharredGlove(), hermit.Enums.COLOR_YELLOW);

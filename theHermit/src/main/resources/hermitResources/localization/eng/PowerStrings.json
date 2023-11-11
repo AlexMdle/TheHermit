@@ -45,15 +45,15 @@
 },
 "hermit:Rugged": {
         "NAME": "Rugged",
-        "DESCRIPTIONS": ["The next", " times you would take unblocked attack damage, reduce it to #b2.", " time you would take unblocked damage, reduce it to #b2."]
+        "DESCRIPTIONS": ["The next", " times you would take unblocked attack damage, reduce it to #b2.", " time you would take unblocked attack damage, reduce it to #b2."]
 },
 "hermit:EternalPower": {
         "NAME": "Power Eternal",
-        "DESCRIPTIONS": ["The first #b4 cards drawn at the start of each turn cost #b", " less that turn."]
+        "DESCRIPTIONS": ["The first #b4 playable cards drawn at the start of each turn cost #b", " less that turn."]
 },
 "hermit:OverwhelmingPowerPower": {
         "NAME": "Overwhelming Power",
-        "DESCRIPTIONS": ["Lose #b"," HP if you end your turn with 0 Energy."]
+        "DESCRIPTIONS": ["Lose #b"," HP if you end your turn with #b0 Energy."]
 },
 "hermit:Bounty": {
         "NAME": "Bounty",
