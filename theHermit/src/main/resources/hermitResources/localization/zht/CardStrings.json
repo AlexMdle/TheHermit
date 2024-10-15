@@ -8,7 +8,7 @@
     "DESCRIPTION": "獲得 !B! 點 格擋 。"
   },
   "hermit:Snapshot": {
-    "NAME": "狙殺",
+    "NAME": "瞬射",
     "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ：先獲得未被 *格 *擋 傷害點 格擋 。"
   },
   "hermit:Desperado": {
@@ -17,7 +17,7 @@
   },
   "hermit:Headshot": {
     "NAME": "爆頭",
-    "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ：造成雙倍傷害。"
+    "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ：傷害加一倍。"
   },
   "hermit:Quickdraw": {
     "NAME": "快拔",
@@ -29,16 +29,16 @@
   },
   "hermit:Covet": {
     "NAME": "渴求",
-    "DESCRIPTION": "丟棄一張牌。 NL 抽 !M! 張牌。 NL 消耗 被丟棄的 詛咒 。",
-    "UPGRADE_DESCRIPTION": "丟棄一張牌。 NL 抽 !M! 張牌。 NL 消耗 被丟棄的 詛咒 。"
+    "DESCRIPTION": "丟棄一張牌， NL 消耗 丟棄的 詛咒 。 NL 抽 !M! 張牌。",
+    "UPGRADE_DESCRIPTION": "丟棄一張牌， NL 消耗 丟棄的 詛咒 。 NL 抽 !M! 張牌。"
   },
   "hermit:HighCaliber": {
     "NAME": "大口徑",
-    "DESCRIPTION": "造成 !D! 點傷害。 NL 獲得一張 *打擊+2　 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 點傷害。 NL 獲得一張 *打擊+3　 。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 點傷害。 NL 獲得一張 *打擊+2 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 點傷害。 NL 獲得一張 *打擊+3 。 NL 消耗 。"
   },
   "hermit:BodyArmor": {
-    "NAME": "全身護甲",
+    "NAME": "防彈衣",
     "DESCRIPTION":"丟棄一張手牌。 NL 獲得 !B! 點 格擋 。 NL 若丟棄一張 *非攻擊 牌 ，再獲得 !B! 點。"
   },
   "hermit:Snipe": {
@@ -52,7 +52,7 @@
     "UPGRADE_DESCRIPTION": "保留 。 NL 造成 !D! 點傷害。 NL 若本回合上張牌觸發 hermit:精準 ，抽一張牌。"
   },
   "hermit:Dissolve": {
-    "NAME": "溶解",
+    "NAME": "漸隱",
     "DESCRIPTION": "獲得 !B! 點 格擋 。 NL 兩回合內 格擋 不會消失 。 NL 消耗 。"
   },
   "hermit:BlackWind": {
@@ -70,23 +70,23 @@
   },
   "hermit:FatalDesire": {
     "NAME": "自弒之欲",
-    "DESCRIPTION": "回合開始時，抽兩張牌並獲得一張 *受傷 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 回合開始時，抽兩張牌並獲得一張 *受傷 。"
+    "DESCRIPTION": "回合開始時，額外抽2張牌並獲得1張 *受傷 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 回合開始時，額外抽2張牌並獲得1張 *受傷 。"
   },
   "hermit:Gambit": {
-    "NAME": "開場白",
-    "DESCRIPTION": "隨機將棄牌堆中 !M! 張攻擊牌返回手牌。 NL 本回合其下次耗能減1。 NL 消耗 。"
+    "NAME": "後手策回",
+    "DESCRIPTION": "隨機將棄牌堆中 !M! 張攻擊牌返回手牌。 NL 本回合其單次耗能減1。 NL 消耗 。"
   },
   "hermit:Roughhouse": {
     "NAME": "鎖喉",
     "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ： NL 先獲得 !B! 點 格擋 。"
   },
   "hermit:Malice": {
-    "NAME": "怨恨",
-    "DESCRIPTION": "消耗 一張手牌。 NL 造成 !D! 點傷害。 NL 若 消耗 一張 詛咒 ， NL 變為群體攻擊。"
+    "NAME": "歹念",
+    "DESCRIPTION": "消耗 一張手牌。 NL 造成 !D! 點傷害。 NL 若 消耗 一張 詛咒 ， NL 造成群體傷害。"
   },
   "hermit:Deadeye": {
-    "NAME": "死神之眼",
+    "NAME": "銳眼",
     "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ： NL 獲得 !M! 點 力量 。"
   },
   "hermit:GhostlyPresence": {
@@ -95,7 +95,7 @@
   },
   "hermit:Adapt": {
     "NAME": "適應",
-    "DESCRIPTION": "回合開始時，可 消耗 1張牌來獲得8點 格擋 。"
+    "DESCRIPTION": "回合開始時，可 消耗 1張牌以獲得8點 格擋 。"
   },
   "hermit:Dive": {
     "NAME": "深潛",
@@ -114,7 +114,7 @@
     "DESCRIPTION": "獲得 !B! 點 格擋 。 NL 獲得一張 *末日將臨 。"
   },
   "hermit:Glare": {
-    "NAME": "凝視",
+    "NAME": "怒視",
     "DESCRIPTION": "給予 !M! 層 虛弱 。 NL 給予 !M! 層 易傷 。",
     "UPGRADE_DESCRIPTION": "保留 。 NL 給予 !M! 層 虛弱 。 NL 給予 !M! 層 易傷 。"
   },
@@ -153,7 +153,7 @@
   },
   "hermit:Spite": {
     "NAME": "惡意",
-    "DESCRIPTION": "造成 !D! 點傷害兩次。 NL 手中每有一張 詛咒 ， NL 抽 !M! 張牌。"
+    "DESCRIPTION": "消耗 手中不可打出牌。 NL 獲得 !B! 點 格擋 。 NL 抽 !M! 張牌。"
   },
   "hermit:Manifest": {
     "NAME": "惡靈現身",
@@ -165,14 +165,14 @@
   },
   "hermit:LowProfile": {
     "NAME": "低姿態",
-    "DESCRIPTION": "獲得 !B! 點 格擋 。 NL 每有一種負面效果， NL 額外獲得 !M! 點。"
+    "DESCRIPTION": "獲得 !B! 點 格擋 。 NL 你每有一種負面效果， NL 額外獲得 !M! 點。"
   },
   "hermit:Horror": {
     "NAME": "恐懼",
     "DESCRIPTION": "給予所有敵人 !M! 層 *瘀傷 。 NL hermit:瘀傷 本回合不會消失。"
   },
   "hermit:NoHoldsBarred": {
-    "NAME": "無謀之為",
+    "NAME": "放手一搏",
     "DESCRIPTION": "對所有敵人造成 !D! 點傷害並給予 !M! 層 hermit:瘀傷 。 NL 下回合失去 [E] 。"
   },
   "hermit:Cheat": {
@@ -180,7 +180,7 @@
     "DESCRIPTION": "從抽牌堆頂部 !M! 張牌中選擇打出一張。 NL hermit:精準 ：觸發打出牌的 hermit:精準 效果。"
   },
   "hermit:Vantage": {
-    "NAME": "優勢",
+    "NAME": "制高點",
     "DESCRIPTION": "獲得 !B! 點 格擋 。 NL hermit:精準 ： NL 抽 !M! 張牌並將其 升級 。",
     "UPGRADE_DESCRIPTION": "獲得 !B! 點 格擋 。 NL hermit:精準 ： NL 抽 !M! 張牌並將其 升級 。"
   },
@@ -191,7 +191,7 @@
   "hermit:Combo": {
     "NAME": "連擊",
     "DESCRIPTION": "每回合首次 hermit:精準 時， NL 將該 *精準 牌返回手牌。",
-    "UPGRADE_DESCRIPTION": "每回合前 !M! 次 hermit:精準 時， NL 將 *精準 牌返回手牌。"
+    "UPGRADE_DESCRIPTION": "每回合前 !M! 次 hermit:精準 時， NL 將該 *精準 牌返回手牌。"
   },
   "hermit:BigShot": {
     "NAME": "冒煙槍管",
@@ -202,7 +202,7 @@
     "DESCRIPTION": "獲得 [E] [E] [E] 。 NL 抽 !hermit:SecondMagic! 張牌。 NL 回合結束時若無 [E] ， NL 失去 !M! 點生命。"
   },
   "hermit:Maintenance": {
-    "NAME": "維護",
+    "NAME": "保養",
     "DESCRIPTION": "*打擊 額外造成 !M! 點傷害。 NL 獲得 !hermit:SecondMagic! 點 敏捷 。 NL 本場戰鬥耗能加1。"
   },
   "hermit:EternalForm": {
@@ -238,11 +238,11 @@
   },
   "hermit:TrackingShot": {
     "NAME": "追蹤射擊",
-    "DESCRIPTION": "hermit:專註 。 NL 造成 !D! 點傷害。"
+    "DESCRIPTION": "hermit:專註 。 NL 造成 !D! 點傷害兩次。"
   },
   "hermit:LoneWolf": {
     "NAME": "孤狼",
-    "DESCRIPTION": "選擇一張手牌， NL 本回合其下次耗能為0。 NL 丟棄其他手牌。"
+    "DESCRIPTION": "選擇一張手牌， NL 本回合其單次耗能為0。 NL 丟棄其他手牌。"
   },
   "hermit:HighNoon": {
     "NAME": "午時已到",
@@ -263,16 +263,16 @@
   },
   "hermit:Determination": {
     "NAME": "決心",
-    "DESCRIPTION": "每當你獲得負面效果， NL 獲得1點 力量 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 每當你獲得負面效果， NL 獲得1點 力量 。"
+    "DESCRIPTION": "獲得負面效果時， NL 同時獲得1點 力量 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 獲得負面效果時， NL 同時獲得1點 力量 。"
   },
   "hermit:Showdown": {
     "NAME": "決戰",
-    "DESCRIPTION": "保留 。 NL 造成 !D! 點傷害。 NL 隨機打出手中 *打擊 。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 點傷害。 NL 隨機全打出手中 *打擊 。"
   },
   "hermit:LuckOfTheDraw": {
     "NAME": "神抽",
-    "DESCRIPTION": "抽牌直到抽到耗能共計為 !M! 。"
+    "DESCRIPTION": "抽牌直至耗能共計 !M! 。"
   },
   "hermit:Coalescence": {
     "NAME": "愈合",
@@ -287,7 +287,7 @@
     "DESCRIPTION": "丟棄所有手牌。 NL 從 *抽牌堆 中抽取 !M! 張稀有度最高的牌。"
   },
   "hermit:DeadOrAlive": {
-    "NAME": "死或生",
+    "NAME": "不論死活",
     "DESCRIPTION": "造成 !D! 點傷害X次。 NL 斬殺 時獲得 hermit:賞金 。 NL 消耗 。"
   },
   "hermit:GoldenBullet": {
@@ -300,16 +300,15 @@
   },
   "hermit:ItchyTrigger": {
     "NAME": "急扣扳機",
-    "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ： NL 隨機一張手牌本回合下次耗能減 !M! 。"
+    "DESCRIPTION": "造成 !D! 點傷害。 NL hermit:精準 ： NL 隨機一張手牌本回合單次耗能減 !M! 。"
   },
   "hermit:EyeOfTheStorm": {
     "NAME": "風暴之眼",
-    "DESCRIPTION": "將 [E] 回復至上限。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "抽一張牌。 NL hermit:精準 ： NL 將 [E] 回復至上限。 NL 消耗 。"
+    "DESCRIPTION": "hermit:專註 。 NL 將 [E] 回復至上限。 NL 消耗 。"
   },
   "hermit:FinalCanter": {
     "NAME": "最終手段",
-    "DESCRIPTION": "保留 。 NL 消耗 手中所有 詛咒 ， NL 每張造成 !D! 點傷害。 NL 消耗 。",
+    "DESCRIPTION": "保留 。 NL 手中每有一張 詛咒 ， NL 造成 !D! 點傷害。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": " NL （造成 !M! 次）",
     "EXTENDED_DESCRIPTION": [" NL （造成 !M! 次）"]
   },
