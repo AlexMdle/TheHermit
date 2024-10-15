@@ -13,7 +13,7 @@
 },
 "hermit:ShadowCloakPower": {
         "NAME": "暗影鬥篷",
-        "DESCRIPTIONS": ["每當你抽到 #y詛咒 時，獲得 #b", " 點 #y格擋 。"]
+        "DESCRIPTIONS": ["每當你抽到或 #y消耗 #y詛咒 時，獲得 #b", " 點 #y格擋 。"]
 },
 "hermit:TakeAimPower": {
         "NAME": "舉槍瞄準",
@@ -49,7 +49,7 @@
 },
 "hermit:EternalPower": {
         "NAME": "永恒形態",
-        "DESCRIPTIONS": ["每回合抽到的前 #b4 張牌該回合首次耗能減 #b", " 。"]
+        "DESCRIPTIONS": ["每回合抽到的前 #b4 張可打出牌該回合首次耗能減 #b", " 。"]
 },
 "hermit:OverwhelmingPowerPower": {
         "NAME": "壓倒性力量",
@@ -88,7 +88,7 @@
         "DESCRIPTIONS": ["額外獲得 #b", " 回合。", " 回合。"]
 },
 "hermit:MaintenanceStrikePower": {
-        "NAME": "維護",
+        "NAME": "保養",
         "DESCRIPTIONS": ["#y打擊 額外造成 #b", " 點傷害。"]
 }
 }
