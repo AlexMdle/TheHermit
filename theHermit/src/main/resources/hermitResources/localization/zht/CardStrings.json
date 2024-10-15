@@ -180,7 +180,7 @@
     "DESCRIPTION": "從抽牌堆頂部 !M! 張牌中選擇打出一張。 NL hermit:精準 ：觸發打出牌的 hermit:精準 效果。"
   },
   "hermit:Vantage": {
-    "NAME": "製高點",
+    "NAME": "制高點",
     "DESCRIPTION": "獲得 !B! 點 格擋 。 NL hermit:精準 ： NL 抽 !M! 張牌並將其 升級 。",
     "UPGRADE_DESCRIPTION": "獲得 !B! 點 格擋 。 NL hermit:精準 ： NL 抽 !M! 張牌並將其 升級 。"
   },
