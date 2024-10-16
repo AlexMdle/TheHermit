@@ -6,7 +6,7 @@
     <groupId>Hermit</groupId>
     <artifactId>Hermit</artifactId>
     <name>Hermit</name>
-    <version>1.55</version>
+    <version>1.56</version>
     <description>A lone undead gunslinger from a far away place.
 Haunted by the inescapable specter of the past.
 
@@ -23,7 +23,16 @@ Features of the class:
 - It's High Noon: An archetype centered on your Strikes and Defends.
 
 Localization Credits: Downfall Localization Team
-Additional Credits: Russian - Jedi515, Korean - 물꼬기, Chinese - OldDrivers, Rita-B, French - AdmiralRazorbeard, Brazilian Portuguese - bear_the_dice, German - AlexMdle
+Additional Credits:
+        Russian - Jedi515, Rucodeby,
+        Korean - 물꼬기, nyamnyami1234,
+        Chinese - OldDrivers, Rita-B, MWallx,
+        French - AdmiralRazorbeard, Agrou cassio,
+        Brazilian Portuguese - bear_the_dice,
+        Spanish - AZDraw-Art,
+        German - AlexMdle,
+        Japanese - kkr
+
 
 Special Thanks to Vex, Mari, Alchyr, Micheal Mayhem, Kiooeht and all the other cool people in #modding, as well as to BulletNick, BulletDuDe and Flan for testing and helping with beta art.
 

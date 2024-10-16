@@ -10,7 +10,7 @@
     "NAME": "Roggenhalm",
     "FLAVOR": "Immer noch in tadellosem Zustand, obwohl es so lang gekaut worden ist.",
     "DESCRIPTIONS": [
-      "Alle Feinde verlieren zu Beginn jedes Kampfes #b2 #yStärke."
+      "Immer wenn du HP während des gegnerischen Zuges verlierst, ziehe #1 Karte."
     ]
   },
   "hermit:BartenderGlass": {
@@ -39,7 +39,7 @@
     "NAME": "Roter Schal",
     "FLAVOR": "Es ist kuschelig und warm.",
     "DESCRIPTIONS": [
-      "Immer wenn du einen Debuff auf einen Gegner anwendest, erhalte #b2 #yBlock."
+      "Immer wenn du einen neuen Debuff auf einen Gegner anwendest, erhalte #b3 #yBlock."
     ]
   },
   "hermit:DentedPlate": {
@@ -53,7 +53,7 @@
     "NAME": "Haustiergeist",
     "FLAVOR": "Armer Kerl.",
     "DESCRIPTIONS": [
-      "Das erste mal, dass du in einem Kampf sterben würdest, überlebe statdessen mit #b1 TP."
+      "Verhindere deinen ersten tödlichen HP Verlust in jedem Kampf."
     ]
   },
   "hermit:CharredGlove": {
@@ -82,21 +82,21 @@
     "NAME": "Messingnägel",
     "FLAVOR": "Der Glanz dieser Nägel scheint nie zu verblassen.",
     "DESCRIPTIONS": [
-      "Beginne jeden Kampf mit #b2 #yMetallschicht."
+      "Erhalte am Ende deines Zuges #b2 Block."
     ]
   },
   "hermit:BlackPowder": {
     "NAME": "Schwarzpulver",
     "FLAVOR": "Mit Vorsicht zu handhaben.",
     "DESCRIPTIONS": [
-      "Füge am Ende deines Zuges ALLEN Feiden #b2 Schaden zu für jeden #yhermit:Volltreffer in diesem Zug."
+      "Jedes mal wenn du ein #yhermit:Volltreffer erzielst, füge ALLEN Feiden #b2 Schaden zu."
     ]
   },
   "hermit:BloodyTooth": {
     "NAME": "Gebrochener Zahn",
     "FLAVOR": "Scheint zu groß um von einem Menschen zu stammen...",
     "DESCRIPTIONS": [
-      "Beginne jeden Kampf mit #b1 #yStärke für jeden gewonnenen Elite-Kampf im selben Akt."
+      "Jedes mal wenn du ein Elite-Kampf gewinnst, heile #b7 HP and erhalte #b35 Gold."
     ]
   }
 }

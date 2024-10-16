@@ -57,7 +57,7 @@
   },
   "hermit:BlackWind": {
     "NAME": "Vento Negro",
-    "DESCRIPTION": "Etéreo. NL Causa dano igual a sua vida faltando. NL Exaurir.",
+    "DESCRIPTION": "Etéreo. NL Causa dano igual ao seu PV faltando. NL Exaurir.",
     "UPGRADE_DESCRIPTION": " NL (Causa !D! de dano.)"
   },
   "hermit:Purgatory": {
@@ -66,7 +66,7 @@
   },
   "hermit:ShadowCloak": {
     "NAME": "Capa Sombria",
-    "DESCRIPTION": "Toda vez que você comprar ou Exaurir uma Maldição, ganhe !M! de Proteção."
+    "DESCRIPTION": "Toda vez que você comprar ou Exaurir uma carta de  Maldição, ganhe !M! de Proteção."
   },
   "hermit:FatalDesire": {
     "NAME": "Desejo Fatal",
@@ -137,7 +137,7 @@
   },
   "hermit:ImpendingDoom": {
     "NAME": "Destruição Iminente",
-    "DESCRIPTION": "Injogável. NL hermit:Na_Mira: NL No final de seu turno, cause 13 de dano à TODOS."
+    "DESCRIPTION": "Injogável. NL Se isso estiver hermit:Na_Mira: NL no final de seu turno, cause 13 de dano à TODOS."
   },
   "hermit:MementoCard": {
     "NAME": "Memento",
@@ -153,7 +153,7 @@
   },
   "hermit:Spite": {
     "NAME": "Contrariar",
-    "DESCRIPTION": "Cause !D! de dano. NL Compre uma carta para cada *Maldição em sua mão."
+    "DESCRIPTION": "Exaura todas as cartas Injogáveis da sua mão. NL Ganhe !B! de Proteção. NL Compre !M! cartas."
   },
   "hermit:Manifest": {
     "NAME": "Manifestar",
@@ -237,8 +237,8 @@
     "EXTENDED_DESCRIPTION": [" NL (Repete !M! ", "vez.)","vezes.)"]
   },
   "hermit:TrackingShot": {
-    "NAME": "Tiro Rastreador",
-    "DESCRIPTION": "hermit:Concentrar. NL Cause !D! de dano."
+    "NAME": "Tiros Rastreadores",
+    "DESCRIPTION": "hermit:Concentrar. NL Cause !D! de dano duas vezes."
   },
   "hermit:LoneWolf": {
     "NAME": "Lobo Solitário",
@@ -268,11 +268,11 @@
   },
   "hermit:Showdown": {
     "NAME": "Confronto",
-    "DESCRIPTION": "Reter. NL Cause !D! de dano. NL Jogue todos os *Golpes da sua mão. NL Exaurir."
+    "DESCRIPTION": "Cause !D! de dano. NL Jogue todos os *Golpes da sua mão."
   },
   "hermit:LuckOfTheDraw": {
     "NAME": "Sorte das Cartas",
-    "DESCRIPTION": "Compre cartas até você comprar um valor total de !M! [E]."
+    "DESCRIPTION": "Compre cartas até você comprar um valor total de !M! [E] ou mais."
   },
   "hermit:Coalescence": {
     "NAME": "Coalescência",
@@ -304,11 +304,11 @@
   },
   "hermit:EyeOfTheStorm": {
     "NAME": "Olho da Tempestade",
-    "DESCRIPTION": "Ganhe Energia até sua Energia máxima. NL Exaurir."
+    "DESCRIPTION": "hermit:Concentrar. NL Ganhe Energia até sua Energia máxima. NL Exaurir."
   },
   "hermit:FinalCanter": {
     "NAME": "Trote Final",
-    "DESCRIPTION": "Reter. NL Exaura todas as *Maldições na sua mão. Cause !D! de dano para cada. NL Exaurir.",
+    "DESCRIPTION": "Reter. NL . Cause !D! de dano para cada Maldição em sua mão. NL Exaurir.",
     "UPGRADE_DESCRIPTION": " NL (Você têm !M! Maldição.)",
     "EXTENDED_DESCRIPTION": [" NL (Você têm !M! Maldiçãoões.)"]
   },

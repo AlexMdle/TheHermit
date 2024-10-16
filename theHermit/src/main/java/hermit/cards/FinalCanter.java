@@ -53,13 +53,8 @@ public class FinalCanter extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         magicNumber = countCards();
 
-        for (AbstractCard c: AbstractDungeon.player.hand.group)
-            if (c.color==CardColor.CURSE)
-                Wiz.atb(new ExhaustSpecificCardAction(c,Wiz.p().hand));
-
         for (int ii=0; ii < magicNumber; ii++)
             Wiz.atb(new FinalCanterAction(m,p,this.damage,this));
-
 
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
@@ -68,7 +63,6 @@ public class FinalCanter extends AbstractDynamicCard {
     public void applyPowers() {
         baseMagicNumber = magicNumber = countCards();
         super.applyPowers();
-
         if (magicNumber == 1)
             this.rawDescription = cardStrings.DESCRIPTION + cardStrings.UPGRADE_DESCRIPTION;
         else

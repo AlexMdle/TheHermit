@@ -10,7 +10,7 @@
     "NAME": "Espiga de Centeio",
     "FLAVOR": "Ainda em condições perfeitas, apesar de ser mastigado por tanto tempo.",
     "DESCRIPTIONS": [
-      "No início de cada combate, todos os inimigos perdem #b2 de #yForça."
+      "Toda vez que você perder vida durante o turno inimigo, compre #b1 carta."
     ]
   },
   "hermit:BartenderGlass": {
@@ -39,7 +39,7 @@
     "NAME": "Cachecol Vermelho",
     "FLAVOR": "É quente e felpudo.",
     "DESCRIPTIONS": [
-      "Quando você aplicar um debuff em um inimigo, ganhe #b2 de #yProteção."
+      "Quando você aplicar um debuff novo em um inimigo, ganhe #b3 de #yProteção."
     ]
   },
   "hermit:DentedPlate": {
@@ -53,7 +53,7 @@
     "NAME": "Fantasma de Estimação",
     "FLAVOR": "Pobrezinho.",
     "DESCRIPTIONS": [
-      "A primeira vez que você fosse morrer em cada combate, ao invés disso, sobreviva com #b1 PV."
+      "Previna a primeira vez que você morreria por dano a cada combate."
     ]
   },
   "hermit:CharredGlove": {
@@ -89,14 +89,14 @@
     "NAME": "Pólvora Preta",
     "FLAVOR": "Manuseie com cuidado.",
     "DESCRIPTIONS": [
-      "No fim de seu turno, cause #b2 de dano a TODOS os inimigos por cada efeito #yhermit:Na_Mira ativado."
+      "Toda vez que um efeito #yhermit:Na_Mira ativar, cause #b2 de dano a TODOS os inimigos."
     ]
   },
   "hermit:BloodyTooth": {
     "NAME": "Dente Quebrado",
     "FLAVOR": "Parece ser grande demais para ter vindo de uma mandíbula humana...",
     "DESCRIPTIONS": [
-      "Inicie cada combate com #b1 de #yForça para cada encontro de Elite derrotado no mesmo ato."
+      "Toda vez que você derrotar uma Elite, recupere #b7 de vida e ganhe #b35 de ouro."
     ]
   }
 }

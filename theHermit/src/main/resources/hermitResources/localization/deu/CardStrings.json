@@ -137,7 +137,7 @@
   },
   "hermit:ImpendingDoom": {
     "NAME": "Drohendes Verhängnis",
-    "DESCRIPTION": "Unspielbar. NL hermit:Volltreffer: NL Am Ende deines Zuges, füge 13 Schaden an ALLE zu."
+    "DESCRIPTION": "Unspielbar. NL Wenn dies am ende deines Zuges ein hermit:Volltreffer ist, füge 13 Schaden an ALLE zu."
   },
   "hermit:MementoCard": {
     "NAME": "Andenken",
@@ -153,7 +153,7 @@
   },
   "hermit:Spite": {
     "NAME": "Hass",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe für jeden *Flüch in deiner Hand eine Karte."
+    "DESCRIPTION": "Erschöpfe alle Unspielbare Karten in deiner Hand. NL Erhalte !B! Block. NL Ziehe !M! Karten."
   },
   "hermit:Manifest": {
     "NAME": "Manifestation",
@@ -237,8 +237,8 @@
     "EXTENDED_DESCRIPTION": [" NL (Wiederholt !M! ", "mal.)","male.)"]
   },
   "hermit:TrackingShot": {
-    "NAME": "Spurschuss",
-    "DESCRIPTION": "hermit:Konzentriere dich. NL Füge !D! Schaden zu."
+    "NAME": "Spurschüsse",
+    "DESCRIPTION": "hermit:Konzentriere dich. NL Füge zwei mal !D! Schaden zu."
   },
   "hermit:LoneWolf": {
     "NAME": "Einsamer Wolf",
@@ -268,11 +268,11 @@
   },
   "hermit:Showdown": {
     "NAME": "Showdown",
-    "DESCRIPTION": "Behalten. NL Füge !D! Schaden zu. NL Spiele alle *Schläge in deiner Hand. NL Erschöpft."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Spiele alle *Schläge in deiner Hand."
   },
   "hermit:LuckOfTheDraw": {
     "NAME": "Glückszug",
-    "DESCRIPTION": "Ziehe Karten bis du ein Wert von !M! [E] in Karten erreicht hast."
+    "DESCRIPTION": "Ziehe Karten bis sie insgesamt !M! oder mehr kosten."
   },
   "hermit:Coalescence": {
     "NAME": "Koaleszenz",
@@ -304,11 +304,11 @@
   },
   "hermit:EyeOfTheStorm": {
     "NAME": "Auge des Sturms",
-    "DESCRIPTION": "Erhalte Energie bis zu deinen Maximum. NL Erschöpft."
+    "DESCRIPTION": "hermit:Konzentriere dich. NL Erhalte Energie bis zu deinen Maximum. NL Erschöpft."
   },
   "hermit:FinalCanter": {
     "NAME": "Letzter Kanter",
-    "DESCRIPTION": "Behalten. NL Erschöpfe alle *Flüche in deiner Hand. Füge für jede !D! Schaden zu. NL Erschöpft.",
+    "DESCRIPTION": "Behalten. NL Füge für jedes *Fluch in deiner Hand !D! Schaden zu. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": " NL (Du hast !M! Fluch.)",
     "EXTENDED_DESCRIPTION": [" NL (Du hast !M! Flüche.)"]
   },

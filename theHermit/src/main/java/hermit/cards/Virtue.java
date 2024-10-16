@@ -2,7 +2,6 @@ package hermit.cards;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -12,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.HealVerticalLineEffect;
 import hermit.HermitMod;
+import hermit.actions.ReduceDebuffsAction;
 import hermit.characters.hermit;
 import hermit.util.Wiz;
 
@@ -72,15 +72,7 @@ public class Virtue extends AbstractDynamicCard {
             AbstractDungeon.effectsQueue.add(new HealVerticalLineEffect((p.hb.cX - p.animX) + MathUtils.random(-X_JITTER * 1.5F, X_JITTER * 1.5F),  p.hb.cY + OFFSET_Y + MathUtils.random(-Y_JITTER, Y_JITTER)));
         }
 
-        Wiz.atb(new AbstractGameAction() {
-            @Override
-            public void update() {
-                Wiz.p().powers.stream()
-                        .filter(p -> p.type == AbstractPower.PowerType.DEBUFF)
-                        .forEach(p -> Wiz.att(new ReducePowerAction(p.owner, p.owner, p.ID, Virtue.this.magicNumber)));
-                isDone = true;
-            }
-        });
+        Wiz.atb(new ReduceDebuffsAction(p, magicNumber));
     }
 
     //Upgraded stats.

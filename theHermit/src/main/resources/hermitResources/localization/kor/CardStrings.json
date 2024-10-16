@@ -34,8 +34,8 @@
   },
   "hermit:HighCaliber": {
     "NAME": "대구경",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *타격+2　 얻습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *타격+3　 얻습니다. NL 소멸."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *타격+2을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *타격+3을 얻습니다. NL 소멸."
   },
   "hermit:BodyArmor": {
     "NAME": "방탄복",
@@ -43,13 +43,13 @@
   },
   "hermit:Snipe": {
     "NAME": "저격",
-    "DESCRIPTION": "이번 턴에 다음으로 사용하는 카드의 hermit:정조준 효과가 두 번 발동됩니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "hermit:집중합니다. NL 이번 턴에 다음으로 사용하는 카드의 hermit:정조준 효과가 두 번 발동됩니다. NL 소멸."
+    "DESCRIPTION": "이번 턴에 사용하는 다음 카드의 hermit:정조준 효과가 두 번 발동됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "hermit:집중합니다. NL 이번 턴에 사용하는 다음 카드의 hermit:정조준 효과가 두 번 발동됩니다. NL 소멸."
   },
   "hermit:CalledShot": {
     "NAME": "콜드샷",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 마지막으로 사용한 카드가 *정조준 *효과를 발동시켰다면 카드를 1장 뽑습니다.",
-    "UPGRADE_DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 이번 턴 마지막으로 사용한 카드가 *정조준 *효과를 발동시켰다면 카드를 1장 뽑습니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 마지막으로 사용한 카드의 *정조준 *효과를 발동시켰다면 카드를 1장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 이번 턴 마지막으로 사용한 카드의 *정조준 *효과를 발동시켰다면 카드를 1장 뽑습니다."
   },
   "hermit:Dissolve": {
     "NAME": "용해",
@@ -126,7 +126,7 @@
   },
   "hermit:Misfire": {
     "NAME": "오발",
-    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. NL 뽑을 카드 더미에 *서투름을 섞어 넣습니다."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 뽑을 카드 더미에 *서투름을 섞어 넣습니다."
   },
   "hermit:SprayPray": {
     "NAME": "마구 쏘기",
@@ -138,7 +138,7 @@
   },
   "hermit:ImpendingDoom": {
     "NAME": "임박한 종말",
-    "DESCRIPTION": "사용불가. NL hermit:정조준: NL 내 턴 종료 시 모두에게 피해를 13 줍니다."
+    "DESCRIPTION": "사용불가. NL 내 턴 종료 시 hermit:정조준 상태라면 모두에게 피해를 13 줍니다."
   },
   "hermit:MementoCard": {
     "NAME": "유품",
@@ -154,7 +154,7 @@
   },
   "hermit:Spite": {
     "NAME": "앙심",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 손에 있는 저주 한 장당 카드를 뽑습니다. "
+    "DESCRIPTION": "손에 있는 사용불가 카드를 모두 소멸시킵니다. NL 방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. "
   },
   "hermit:Manifest": {
     "NAME": "현현",
@@ -182,8 +182,8 @@
   },
   "hermit:Vantage": {
     "NAME": "위치 선점",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL hermit:정조준: NL 카드를 !M! 장 뽑고 그 카드를 이번 전투 동안 강화합니다.",
-    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL hermit:정조준: NL 카드를 !M! 장 뽑고 그 카드를 이번 전투 동안 강화합니다."
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL hermit:정조준: NL 카드를 1장 뽑고 그 카드를 강화합니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL hermit:정조준: NL 카드를 !M! 장 뽑고 그 카드를 강화합니다."
   },
   "hermit:Brawl": {
     "NAME": "난투",
@@ -213,8 +213,8 @@
   },
   "hermit:FullyLoaded": {
     "NAME": "장전 완료",
-    "DESCRIPTION": "*타격과 *수비를 모두 뽑습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "보존. NL *타격과 *수비를 모두 뽑습니다. NL 소멸."
+    "DESCRIPTION": "뽑을 카드 더미에서 *타격과 *수비를 전부 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 뽑을 카드 더미에서 *타격과 *수비를 전부 뽑습니다. NL 소멸."
   },
   "hermit:Gestalt": {
     "NAME": "게슈탈트",
@@ -239,11 +239,11 @@
   },
   "hermit:TrackingShot": {
     "NAME": "트래킹샷",
-    "DESCRIPTION": "hermit:집중합니다. NL 피해를 !D! 줍니다."
+    "DESCRIPTION": "hermit:집중합니다. NL 피해를 !D! 만큼 두 번 줍니다."
   },
   "hermit:LoneWolf": {
     "NAME": "외톨이",
-    "DESCRIPTION": "카드를 선택합니다. NL 그 카드의 비용이 이번 전투 동안 0이 됩니다. NL 다른 카드를 모두 버립니다."
+    "DESCRIPTION": "카드를 선택합니다. NL 그 카드의 비용이 이번 턴 동안 0이 됩니다. NL 다른 카드를 모두 버립니다."
   },
   "hermit:HighNoon": {
     "NAME": "정오",
@@ -269,11 +269,11 @@
   },
   "hermit:Showdown": {
     "NAME": "결착",
-    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 손에 있는 모든 *타격을 사용합니다. NL 소멸."
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 손에 있는 모든 *타격을 사용합니다."
   },
   "hermit:LuckOfTheDraw": {
     "NAME": "행운의 뽑기",
-    "DESCRIPTION": "뽑은 카드의 [E]  합이 !M! 만큼 될 때까지 카드를 뽑습니다."
+    "DESCRIPTION": "뽑은 카드의 [E]  합이 !M! 이상 될 때까지 카드를 뽑습니다."
   },
   "hermit:Coalescence": {
     "NAME": "융합",
@@ -305,12 +305,11 @@
   },
   "hermit:EyeOfTheStorm": {
     "NAME": "태풍의 눈",
-    "DESCRIPTION": "최대  [E] 보다 모자란 만큼  [E] 를 얻습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "카드를 뽑습니다. NL hermit:정조준: NL 최대  [E] 보다 모자란 만큼  [E] 를 얻습니다. NL 소멸."
+    "DESCRIPTION": "최대  [E] 보다 모자란 만큼  [E] 를 얻습니다. NL 소멸."
   },
   "hermit:FinalCanter": {
     "NAME": "최후의 위선",
-    "DESCRIPTION": "보존. NL 손에 있는 모든 저주를 소멸시킵니다. *소멸시킨 저주 한 장당 피해를 !D! 줍니다. NL 소멸.",
+    "DESCRIPTION": "보존. 손에 있는 저주 한 장당 피해를 !D! 줍니다. NL 소멸.",
     "UPGRADE_DESCRIPTION": " NL (저주가 !M! 장 있습니다.)",
     "EXTENDED_DESCRIPTION": [" NL (저주가 !M! 장 있습니다.)"]
   },
